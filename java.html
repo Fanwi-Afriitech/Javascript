@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<title>A first program in Java</title>
+
+<script type="text/javascript">
+document.writeln(
+    "<h1> welcome to js programming</h1>");
+	
+	document.write(
+	"<h2 style=\"color:magenta\">");
+	document.write(" I love studying"+" introduction to javascript</h2>");
+	
+	document.writeln("<h3> Welcome to<br /> techiques of" +"<br /> javascript </h3>");
+	
+	window.alert("welcome to\n JavaScript\n programming");
+	
+	<!-- var name; -->
+	<!--name=window.prompt("please enter your name","GalAnt"); -->
+	<!--document.writeln("<h1> Hello "+ name + " welcome to JS </h1>"); -->
+
+var firstnumber,secondnumber, number1,number2, sum;
+firstnumber=window.prompt("Enter first integer","0");
+ secondnumber=window.prompt("Enter second integer","0");
+
+number1 = parseInt(firstnumber);
+number2 = parseInt(secondnumber);
+sum = number1 + number2;
+document.writeln("<h4> The sum is "+sum+"</h4>"); 
+
+var name,
+     now = new Date(),
+	 hour = now.getHours();
+	 
+	 name=window.prompt("please enter your name","GalAnt"); 
+	 
+if (hour < 12)
+document.write("<h4> good morning,");
+if (hour >= 12)
+{
+hour = hour - 12;
+if (hour < 6)
+document.write("<h4> good afternoon,");
+if (hour >= 6)
+document.write("<h4> good evening,");
+}
+document.writeln(name + "welcom to js </h4>");
+
+
+
+</script>
+</head>
+<body>
+<p>click refresh</p>
+</body>
+
+
+</html>
